@@ -5,7 +5,7 @@ const input = document.getElementsByClassName("input")[0];
 getDef.addEventListener('click', () => {
     let word = input.value;
     defintions.innerHTML = "<tr><th>Speech Part</th><th>Definition</th></td>";
-    fetch(`http://localhost:3000/${word}`)
+    fetch(`https://english-dictionary-api.herokuapp.com/${word}`)
         .then(res => res.json())
         .then(data => {
             for (element of data) {
