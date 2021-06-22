@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Dictionary API</title>
+</head>
+<body>        
+    <div class="nav-bar">
+        <h1>
+            English Dictionary API 
+        </h1>
+    </div>
+    <div class="container">
+        <input type="text" class="input" placeholder="Term"> 
+        <button class="get-definition" >Get Definitions</button>
+    </div>
+    <table class="definitions">
+    </table>
+    <div class="code">
+        <h3>Code example</h3>
+        <textarea name="Code" cols="50" rows="15" readonly>
+ fetch(`https://english-dictionary-api.herokuapp.com/${word}`)
+.then(res => res.json())
+.then(data => { 
+    /* data is an array of objects, every obejct conatins definition, part of speach, example, etc. */
+    
+    for (element of data) {
+       console.log(element.def)
+       console.log(element.speech_part)
+       console.log(element.synonyms)
+    }
+})
+        </textarea>
+    </div>
+ 
+
+
+    
+</body>
+</html>
