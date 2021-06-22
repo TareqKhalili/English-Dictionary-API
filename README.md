@@ -1,8 +1,8 @@
 # English-Dictionary-API
 
-## get words DEFINITIONS, EXAMPLES, PARTS OF SPEACH, and SYNONYMS using this API
+### get words DEFINITIONS, EXAMPLES, PARTS OF SPEACH, and SYNONYMS using this API
 
-## Check out the website for the API:  https://english-dictionary-api.herokuapp.com/
+### Check out this website to test the API:  https://english-dictionary-api.herokuapp.com/
 
 # Code Example
 
